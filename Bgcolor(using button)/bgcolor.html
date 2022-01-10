@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>bgcolor</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<button>click here</button>
+<script type="text/javascript">
+  var color=["#222f3e","#f368e0","#ee5253","#0abde","#10ac84","#5f27cd","red","green","yellow","blue","silver","black","white"];
+  var i=0;
+  document.querySelector("button").addEventListener("click",function(){
+  i=i<color.length?++i:0;
+  document.querySelector("body").style.background=color[i]
+  })
+  </script>
+</body>
+</html>
